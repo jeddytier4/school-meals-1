@@ -89,17 +89,17 @@ BooleanRadio.propTypes = {
 
 BooleanRadio.defaultProps = {
   trueLabel:
-    <FormattedMessage
-        id="app.booleanRadio.trueLabel"
-        description="The label for the true selection of a true/false radio button pair."
-        defaultMessage="Yes"
-    />,
+  <FormattedMessage
+      id="app.booleanRadio.trueLabel"
+      description="The label for the true selection of a true/false radio button pair."
+      defaultMessage="Yes"
+  />,
   falseLabel:
-    <FormattedMessage
-        id="app.booleanRadio.falseLabel"
-        description="The label for the false selection of a true/false radio button pair."
-        defaultMessage="No"
-    />
+  <FormattedMessage
+      id="app.booleanRadio.falseLabel"
+      description="The label for the false selection of a true/false radio button pair."
+      defaultMessage="No"
+  />
 }
 
 export default BooleanRadio

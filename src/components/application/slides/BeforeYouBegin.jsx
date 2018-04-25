@@ -48,13 +48,13 @@ class BeforeYouBegin extends React.Component {
               defaultMessage="If you received a {tooltip} from the school saying that your children were automatically approved (directly certified) for free meals for the {schoolYear} school year because someone in your household participates in {assistanceProgramList} then you do not need to submit an application."
               values={{
                 tooltip:
-                  <Tooltip text={tooltiptext.letter}>
-                    <FormattedMessage
-                        id="app.slides.beforeYouBegin.letter"
-                        description="As in a letter from a school."
-                        defaultMessage="letter"
-                    />
-                  </Tooltip>,
+  <Tooltip text={tooltiptext.letter}>
+    <FormattedMessage
+        id="app.slides.beforeYouBegin.letter"
+        description="As in a letter from a school."
+        defaultMessage="letter"
+    />
+  </Tooltip>,
                 schoolYear: <SchoolYear />,
                 assistanceProgramList: <SerialList items={assistancePrograms} intersection={true} />
               }}
@@ -129,13 +129,13 @@ class BeforeYouBegin extends React.Component {
               defaultMessage="Your {tooltip} does not affect your eligibility for free and reduced price benefits."
               values={{
                 tooltip:
-                  <Tooltip text={tooltiptext.usStatus}>
-                    <FormattedMessage
-                        id="app.slides.beforeYouBegin.usStatus"
-                        description="As in the status of the person/family applying for benefits."
-                        defaultMessage="US citizenship or immigration status"
-                    />
-                  </Tooltip>
+  <Tooltip text={tooltiptext.usStatus}>
+    <FormattedMessage
+        id="app.slides.beforeYouBegin.usStatus"
+        description="As in the status of the person/family applying for benefits."
+        defaultMessage="US citizenship or immigration status"
+    />
+  </Tooltip>
               }}
           />
         </p>

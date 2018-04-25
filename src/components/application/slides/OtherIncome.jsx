@@ -27,13 +27,13 @@ class OtherIncome extends Component {
               defaultMessage="{tooltip} from outside the household"
               values={{
                 tooltip:
-                  <Tooltip text={tooltiptext.regularCashPayments}>
-                    <FormattedMessage
-                        id="app.slides.otherIncome.regularCashPaymentsTooltip"
-                        description="Regular cash payments"
-                        defaultMessage="Regular cash payments"
-                    />
-                  </Tooltip>
+  <Tooltip text={tooltiptext.regularCashPayments}>
+    <FormattedMessage
+        id="app.slides.otherIncome.regularCashPaymentsTooltip"
+        description="Regular cash payments"
+        defaultMessage="Regular cash payments"
+    />
+  </Tooltip>
               }}
           />
         </IncomeSource>

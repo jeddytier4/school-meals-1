@@ -116,23 +116,23 @@ Slide.defaultProps = {
   backDisabled: false,
   nextDisabled: false,
   backText:
-    <FormattedMessage
-        id="app.slide.backButton"
-        description="Default text for button to move back a slide."
-        defaultMessage="Back"
-    />,
+  <FormattedMessage
+      id="app.slide.backButton"
+      description="Default text for button to move back a slide."
+      defaultMessage="Back"
+  />,
   nextText:
-    <FormattedMessage
-        id="app.slide.nextButton"
-        description="Default text for button to move forward a slide."
-        defaultMessage="Continue"
-    />,
+  <FormattedMessage
+      id="app.slide.nextButton"
+      description="Default text for button to move forward a slide."
+      defaultMessage="Continue"
+  />,
   helpText:
-    <FormattedMessage
-        id="app.slide.helpText"
-        description="Default text to tell user that the current slide is incomplete."
-        defaultMessage="Please enter all required information above."
-    />
+  <FormattedMessage
+      id="app.slide.helpText"
+      description="Default text to tell user that the current slide is incomplete."
+      defaultMessage="Please enter all required information above."
+  />
 }
 
 export default Slide

@@ -57,13 +57,13 @@ class UnemploymentIncome extends Component {
               defaultMessage="Social Security Disability Insurance {tooltip}"
               values={{
                 tooltip:
-                  <Tooltip text={tooltiptext.SSDI}>
-                    <FormattedMessage
-                        id="app.slides.unemploymentIncome.ssdiToolTip"
-                        description="(SSDI)"
-                        defaultMessage="(SSDI)"
-                    />
-                  </Tooltip>
+  <Tooltip text={tooltiptext.SSDI}>
+    <FormattedMessage
+        id="app.slides.unemploymentIncome.ssdiToolTip"
+        description="(SSDI)"
+        defaultMessage="(SSDI)"
+    />
+  </Tooltip>
               }}
           />
         </IncomeSource>

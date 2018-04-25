@@ -27,13 +27,13 @@ class PublicAssistanceIncome extends Component {
               defaultMessage="Supplemental Security Income {tooltip}"
               values={{
                 tooltip:
-                  <Tooltip text={tooltiptext.SSI}>
-                    <FormattedMessage
-                        id="app.slides.publicAssistanceIncome.ssiToolTip"
-                        description="SSI tooltip"
-                        defaultMessage="(SSI)"
-                    />
-                  </Tooltip>
+  <Tooltip text={tooltiptext.SSI}>
+    <FormattedMessage
+        id="app.slides.publicAssistanceIncome.ssiToolTip"
+        description="SSI tooltip"
+        defaultMessage="(SSI)"
+    />
+  </Tooltip>
               }}
           />
         </IncomeSource>
@@ -45,13 +45,13 @@ class PublicAssistanceIncome extends Component {
               defaultMessage="{tooltip} from state or local government (including housing subsidies)"
               values={{
                 tooltip:
-                  <Tooltip text={tooltiptext.cashAssistance}>
-                    <FormattedMessage
-                        id="app.slides.publicAssistanceIncome.cashAssistanceToolTip"
-                        description="Cash assistance"
-                        defaultMessage="Cash assistance"
-                    />
-                  </Tooltip>
+  <Tooltip text={tooltiptext.cashAssistance}>
+    <FormattedMessage
+        id="app.slides.publicAssistanceIncome.cashAssistanceToolTip"
+        description="Cash assistance"
+        defaultMessage="Cash assistance"
+    />
+  </Tooltip>
               }}
           />
         </IncomeSource>

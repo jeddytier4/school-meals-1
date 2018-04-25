@@ -43,21 +43,21 @@ class OtherProgramsProgram extends Component {
               onChange={onChange}
           />
          :
-              <div>
-                <BooleanRadio
-                    object={applicability} name={attribute}
-                    onChange={this.handleIsApplicableChange}
+          <div>
+            <BooleanRadio
+                object={applicability} name={attribute}
+                onChange={this.handleIsApplicableChange}
+            />
+            {applicability[attribute] &&
+            <Checkboxes legend="Students">
+              <label>
+                <FormattedMessage
+                    id="app.slides.otherProgramsProgram.whichStudents"
+                    description="Which students?"
+                    defaultMessage="Which students?"
                 />
-                {applicability[attribute] &&
-                <Checkboxes legend="Students">
-                  <label>
-                    <FormattedMessage
-                        id="app.slides.otherProgramsProgram.whichStudents"
-                        description="Which students?"
-                        defaultMessage="Which students?"
-                    />
-                  </label>
-                  {
+              </label>
+              {
                 students.map(student =>
                   <Checkbox
                       object={student}
@@ -69,9 +69,9 @@ class OtherProgramsProgram extends Component {
                   </Checkbox>
                 )
               }
-                </Checkboxes>
+            </Checkboxes>
            }
-              </div>
+          </div>
         }
       </div>
     )

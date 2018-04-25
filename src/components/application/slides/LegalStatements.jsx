@@ -58,7 +58,7 @@ const LegalStatements = () => {
         <FormattedMessage
             id="app.slides.legalStatements.fedCivilRights"
             description="Civil rights paragraph"
-            defaultMessage="In accordance with Federal civil rights law and U.S. Department of Agriculture {usda} civil rights regulations and policies, the {usda}, its Agencies, offices, and employees, and institutions participating in or administering {usda} programs are prohibited from discriminating based on race, color, national origin, religion, sex, gender identity (including gender expression), sexual orientation, disability, age, marital status, family/parental status, income derived from a public assistance program, political beliefs, or reprisal or retaliation for prior civil rights activity, in any program or activity conducted or funded by {usda}  (not all bases apply to all programs). Remedies and complaint filing deadlines vary by program or incident."
+            defaultMessage="In accordance with Federal civil rights law and U.S. Department of Agriculture USDA civil rights regulations and policies, the USDA, its Agencies, offices, and employees, and institutions participating in or administering USDA programs are prohibited from discriminating based on race, color, national origin, sex, disability, age, or reprisal or retaliation for prior civil rights activity in any program or activity conducted or funded by USDA."
             values={{
               usda: <abbr title="United States Department of Agriculture">USDA</abbr>
             }}
@@ -68,7 +68,7 @@ const LegalStatements = () => {
         <FormattedMessage
             id="app.slides.legalStatements.disabilities"
             description="Persons with disabilities"
-            defaultMessage="Persons with disabilities who require alternative means of communication for program information (e.g., Braille, large print, audiotape, American Sign Language, etc.) should contact the responsible Agency or {usda}'s TARGET Center at (202) 720-2600 (voice and TTY) or contact {usda} through the Federal Relay Service at (800) 877-8339. Additionally, program information may be made available in languages other than English."
+            defaultMessage="Persons with disabilities who require alternative means of communication for program information (e.g. Braille, large print, audiotape, American Sign Language, etc.), should contact the Agency (State or local) where they applied for beneﬁts. Individuals who are deaf, hard of hearing or have speech disabilities may contact USDA through the Federal Relay Service at (800) 877-8339. Additionally, program information may be made available in languages other than English."
             values={{
               usda: <abbr title="United States Department of Agriculture">USDA</abbr>
             }}
@@ -78,7 +78,7 @@ const LegalStatements = () => {
         <FormattedMessage
             id="app.slides.legalStatements.fileComplaint"
             description="to file a complaint..."
-            defaultMessage="To file a program discrimination complaint, complete the {usda} Program Discrimination Complaint Form, AD-3027, found online at How to File a Program Discrimination Complaint and at any {usda} office or write a letter addressed to {usda} and provide in the letter all of the information requested in the form. To request a copy of the complaint form, call (866) 632-9992. Submit your completed form or letter to {usda} by: (1) mail: U.S. Department of Agriculture, Office of the Assistant Secretary for Civil Rights, 1400 Independence Avenue, SW, Washington, D.C. 20250-9410; (2) fax: (202) 690-7442; or (3) email: program.intake@usda.gov."
+            defaultMessage="To ﬁle a program complaint of discrimination, complete the USDA Program Discrimination Complaint Form, (AD-3027) found online at: http://www.ascr.usda.gov/complaint_ﬁling_cust.html, and at any USDA office, or write a letter addressed to USDA and provide in the letter all of the information requested in the form. To request a copy of the complaint form, call (866) 632-9992. Submit your completed form or letter to USDA by: (1) mail: U.S. Department of Agriculture, Office of the Assistant Secretary for Civil Rights, 1400 Independence Avenue, SW, Washington, D.C. 20250-9410; (2) fax: (202) 690-7442; or (3) email: program.intake@usda.gov."
             values={{
               usda: <abbr title="United States Department of Agriculture">USDA</abbr>
             }}
@@ -88,10 +88,7 @@ const LegalStatements = () => {
         <FormattedMessage
             id="app.slides.legalStatements.equalOpportunity"
             description="USDA is an equal opportunity..."
-            defaultMessage="{usda} is an equal opportunity provider, employer, and lender."
-            values={{
-              usda: <abbr title="United States Department of Agriculture">USDA</abbr>
-            }}
+            defaultMessage="This institution is an equal opportunity provider."
         />
       </p>
     </Slide>
