@@ -12,6 +12,11 @@ Should you encounter an error with `uswds` and `politespace`, it might be necess
 1. `cd node_modules/uswds`
 2. `npm update`
 
+To run eslint:
+
+1. `cd /node_modules/.bin`
+2. `eslint --fix --ext .js --ext .jsx "[file path to /src]"`
+
 ## Public domain
 
 As stated in [CONTRIBUTING](CONTRIBUTING.md):
