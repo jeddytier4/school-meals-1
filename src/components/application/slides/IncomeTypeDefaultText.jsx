@@ -36,21 +36,21 @@ class IncomeTypeDefaultText extends Component {
               defaultMessage="NOTE: Remember to report {tooltip}, {tooltip2} income."
               values={{
                 tooltip:
-                  <Tooltip text={tooltiptext.currentAdult}>
-                    <FormattedMessage
-                        id="app.slides.IncomeTypeDefaultText.currentAdult"
-                        description="current"
-                        defaultMessage="current"
-                    />
-                  </Tooltip>,
+  <Tooltip text={tooltiptext.currentAdult}>
+    <FormattedMessage
+        id="app.slides.IncomeTypeDefaultText.currentAdult"
+        description="current"
+        defaultMessage="current"
+    />
+  </Tooltip>,
                 tooltip2:
-                  <Tooltip text={tooltiptext.gross}>
-                    <FormattedMessage
-                        id="app.slides.IncomeTypeDefaultText.gross"
-                        description="gross"
-                        defaultMessage="gross"
-                    />
-                  </Tooltip>
+  <Tooltip text={tooltiptext.gross}>
+    <FormattedMessage
+        id="app.slides.IncomeTypeDefaultText.gross"
+        description="gross"
+        defaultMessage="gross"
+    />
+  </Tooltip>
               }}
           />
         </p>

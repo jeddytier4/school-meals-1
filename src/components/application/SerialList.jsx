@@ -13,11 +13,11 @@ class SerialList extends Component {
           description="Final delimiter for an intersecting list."
           defaultMessage="or"
       /> :
-          <FormattedMessage
-              id="app.serialList.unionDelim"
-              description="Final delimiter for a union list."
-              defaultMessage="and"
-          />
+      <FormattedMessage
+          id="app.serialList.unionDelim"
+          description="Final delimiter for a union list."
+          defaultMessage="and"
+      />
 
     return (
       <span>

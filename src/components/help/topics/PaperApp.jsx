@@ -23,13 +23,13 @@ export default class PaperApp extends Component {
                 organizationName: organization.name,
                 organizationContactInfo: `${organization.contact.phone} / ${organization.contact.email} / ${organization.contact.address}`,
                 paperApplicationLink:
-                  <a href={organization.paperApplication.url} target="_blank" rel="noopener noreferrer">
-                    <FormattedMessage
-                        id="help.topic.paperApp.paperApplication"
-                        description="Phrase"
-                        defaultMessage="paper application"
-                    />
-                  </a>
+  <a href={organization.paperApplication.url} target="_blank" rel="noopener noreferrer">
+    <FormattedMessage
+        id="help.topic.paperApp.paperApplication"
+        description="Phrase"
+        defaultMessage="paper application"
+    />
+  </a>
               }}
           />
         </p>

@@ -70,13 +70,13 @@ class MilitaryIncome extends Component {
                 defaultMessage="Military {tooltip}"
                 values={{
                   tooltip:
-                    <Tooltip text={tooltiptext.cashBonus}>
-                      <FormattedMessage
-                          id="app.slides.militaryIncome.cashBonusTooltip"
-                          description="cash bonus"
-                          defaultMessage="cash bonus"
-                      />
-                    </Tooltip>
+  <Tooltip text={tooltiptext.cashBonus}>
+    <FormattedMessage
+        id="app.slides.militaryIncome.cashBonusTooltip"
+        description="cash bonus"
+        defaultMessage="cash bonus"
+    />
+  </Tooltip>
                 }}
             />
           </IncomeSource>
@@ -88,13 +88,13 @@ class MilitaryIncome extends Component {
                 defaultMessage="Military {tooltip} for off-base housing, food, clothing (other than FSSA and MHPI)"
                 values={{
                   tooltip:
-                    <Tooltip text={tooltiptext.allowances}>
-                      <FormattedMessage
-                          id="app.slides.militaryIncome.allowanceTooltip"
-                          description="allowance"
-                          defaultMessage="allowance"
-                      />
-                    </Tooltip>
+  <Tooltip text={tooltiptext.allowances}>
+    <FormattedMessage
+        id="app.slides.militaryIncome.allowanceTooltip"
+        description="allowance"
+        defaultMessage="allowance"
+    />
+  </Tooltip>
                 }}
             />
           </IncomeSource>

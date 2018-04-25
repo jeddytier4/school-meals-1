@@ -24,11 +24,11 @@ class ChildIncomeOverview extends Component {
           description="Possessive phrase for a single child's income."
           defaultMessage="child's income"
       /> :
-          <FormattedMessage
-              id="app.slides.childIncomeOverview.multipleChildIncome"
-              description="Possessive phrase for multiple children's income."
-              defaultMessage="children's income"
-          />
+      <FormattedMessage
+          id="app.slides.childIncomeOverview.multipleChildIncome"
+          description="Possessive phrase for multiple children's income."
+          defaultMessage="children's income"
+      />
     )
 
     return (

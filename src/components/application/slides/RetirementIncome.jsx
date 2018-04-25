@@ -27,29 +27,29 @@ class RetirementIncome extends Component {
               defaultMessage="{tooltip} (including survivor benefits, {tooltip2}, and {tooltip3})"
               values={{
                 tooltip:
-                  <Tooltip text={tooltiptext.socialSecurity}>
-                    <FormattedMessage
-                        id="app.slides.retirementIncome.socialSecurity"
-                        description="Social Security"
-                        defaultMessage="Social Security"
-                    />
-                  </Tooltip>,
+  <Tooltip text={tooltiptext.socialSecurity}>
+    <FormattedMessage
+        id="app.slides.retirementIncome.socialSecurity"
+        description="Social Security"
+        defaultMessage="Social Security"
+    />
+  </Tooltip>,
                 tooltip2:
-                  <Tooltip text={tooltiptext.blackLung}>
-                    <FormattedMessage
-                        id="app.slides.retirementIncome.blackLung"
-                        description="Black Lung benefits"
-                        defaultMessage="Black Lung benefits"
-                    />
-                  </Tooltip>,
+  <Tooltip text={tooltiptext.blackLung}>
+    <FormattedMessage
+        id="app.slides.retirementIncome.blackLung"
+        description="Black Lung benefits"
+        defaultMessage="Black Lung benefits"
+    />
+  </Tooltip>,
                 tooltip3:
-                  <Tooltip text={tooltiptext.railroad}>
-                    <FormattedMessage
-                        id="app.slides.retirementIncome.railroad"
-                        description="Railroad Retirement"
-                        defaultMessage="Railroad Retirement"
-                    />
-                  </Tooltip>
+  <Tooltip text={tooltiptext.railroad}>
+    <FormattedMessage
+        id="app.slides.retirementIncome.railroad"
+        description="Railroad Retirement"
+        defaultMessage="Railroad Retirement"
+    />
+  </Tooltip>
               }}
           />
         </IncomeSource>
