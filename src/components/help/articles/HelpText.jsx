@@ -797,7 +797,7 @@ export const define = {
   <FormattedMessage
       id="help.articles.helpText.ssiChildrenDef"
       description="Help text."
-      defaultMessage="Supplemental Security Income (SSI) provides cash to meet basic needs for food, clothing, and shelter to children younger than age 18 who have a physical or mental condition, or combination of conditions, that meets Social Security’s definition of disability for children, and if his or her income and resources fall within the eleigibility limits."
+      defaultMessage="Supplemental Security Income (SSI) provides cash to meet basic needs for food, clothing, and shelter to children younger than age 18 who have a physical or mental condition, or combination of conditions, that meets Social Security’s definition of disability for children, and if his or her income and resources fall within the eligibility limits."
   />,
 // D25
   ssSurvivorTerm:

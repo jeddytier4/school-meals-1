@@ -272,11 +272,7 @@ export default class WhatIncome extends Component {
           <FormattedMessage
               id="help.topic.WhatIncome.answer37"
               description="Answer for the applicable income help topic."
-              defaultMessage="Cash value of benefits from {snapAccronym} or {fdpirAccronym}"
-              values={{
-                snapAccronym: assistanceProgramsVar.snap.accronym,
-                fdpirAccronym: assistanceProgramsVar.fdpir.accronym
-              }}
+              defaultMessage="We do not take into account income from:"
           />
         </p>
         <ul>
