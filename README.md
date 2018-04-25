@@ -14,8 +14,8 @@ Should you encounter an error with `uswds` and `politespace`, it might be necess
 
 To run eslint:
 
-1. `cd /node_modules/.bin`
-2. `eslint --fix --ext .js --ext .jsx "[file path to /src]"`
+1. `cd node_modules/.bin`
+2. `eslint --fix --ext .js --ext .jsx "[complete file path to /src]"`
 
 ## Public domain
 
