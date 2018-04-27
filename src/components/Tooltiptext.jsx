@@ -47,7 +47,7 @@ export const tooltiptext = {
   fdpir: <FormattedMessage
       id="tooltip.fdpir"
       description="Tooltip text explaining FDPIR."
-      defaultMessage="{fdpirFullName} ({fdpirAccronym}) is a Federal program that provides USDA foods to low-icome households, including the elderly, living on Indian reservations, and to Native American families residing in designated areas near reservations and in the State of Oklahoma."
+      defaultMessage="{fdpirFullName} ({fdpirAccronym}) is a Federal program that provides USDA foods to low-icome households, including the elderly living on Indian reservations, and to Native American families residing in designated areas near reservations and in the State of Oklahoma."
       values={{
         fdpirFullName: assistanceProgramsVar.fdpir.fullName,
         fdpirAccronym: assistanceProgramsVar.fdpir.accronym
