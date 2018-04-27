@@ -169,7 +169,7 @@ export const help = {
   <FormattedMessage
       id="help.articles.helpText.publicChargeBody"
       description="Help text."
-      defaultMessage="No, the non-cash benefits received through the National School Lunch Program and School Breakfast Programs are not subject to public charge consideration. In other words, you will not be deported, denied entry to the country, or denied permanent status because you apply for or receive school meal benefits."
+      defaultMessage="No, the non-cash benefits received through the National School Lunch Program and School Breakfast Program are not subject to public charge consideration. In other words, you will not be deported, denied entry to the country, or denied permanent status because you apply for or receive school meal benefits."
   />,
 // F13
   checkedTitle:
