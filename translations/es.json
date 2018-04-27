@@ -220,7 +220,7 @@
   "app.slides.childIncomeSlide.incomeReported": "Los ingresos declarados aquí deben ser los ingresos {gross} {tooltip} del niño.",
   "app.slides.childIncomeSlide.current": "actuales",
   "app.slides.childIncomeSlide.gross": "brutos",
-  "app.slides.childIncomeSlide.childGross": "{grossIncome}  se refiere a todo el dinero ganado o recibido antes de las deducciones, como el impuesto a las ganancias, impuesto del Seguro Social o primas de seguros. No debe declarar sus ingresos netos, que es el monto de dinero recibido en un cheque de pago. Los ingresos netos son los ingresos totales (o brutos), menos los impuestos y las deducciones, y comúnmente se lo llama “salario de bolsillo”.",
+  "app.slides.childIncomeSlide.childGross": "{grossIncome}  se refiere a todo el dinero ganado o recibido antes de las deducciones, como el impuesto a las ganancias, impuesto del Seguro Social o primas de seguros. No debe declarar sus ingresos netos, que es el monto de dinero recibido en un cheque de pago. Los ingresos netos son los ingresos totales (o brutos), menos los impuestos y las deducciones, y comúnmente se lo llama “salario de bolsillo.”",
   "app.slides.childIncomeSlide.grossIncome": "Ingresos brutos",
   "app.slides.childIncomeSlide.moneyEarned": "Dinero ganado en un trabajo de tiempo completo o medio tiempo.",
   "app.slides.childIncomeSlide.supplementalIncome": "Los Ingresos de seguridad suplementarios {tooltip} o {tooltip2} del Seguro Social",
