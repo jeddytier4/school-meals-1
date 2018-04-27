@@ -456,7 +456,7 @@ export const help = {
   <FormattedMessage
       id="help.articles.helpText.noIncomeBody"
       description="Help text."
-      defaultMessage="You should still list these household members on your application.  Household members may not earn or receive some of the types of income we ask you to report, or they may not receive income at all. Remember your eligibility determination is based on both household income and household size. For more information on who to include in your application, see the FAQ “WHO SHOULD I INCLUDE IN MY HOUSEHOLD?”"
+      defaultMessage="You should still list these household members on your application.  Household members may not earn or receive some of the types of income we ask you to report, or they may not receive income at all. Remember, your eligibility determination is based on both household income and household size. For more information on who to include in your application, see the FAQ “WHO SHOULD I INCLUDE IN MY HOUSEHOLD?”"
   />,
 // F41
   ssnTitle:
