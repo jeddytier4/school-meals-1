@@ -180,7 +180,7 @@ export const tooltiptext = {
   veteranBenefits: <FormattedMessage
       id="tooltip.veteranBenefits"
       description="Tooltip text explaining veteran benefits."
-      defaultMessage="Benefits that are paid to veterans that have a service-connected disability and were not dishonorably discharged."
+      defaultMessage="Benefits that are paid to veterans who have a service-connected disability and were not dishonorably discharged."
                    />,
   workersComp: <FormattedMessage
       id="tooltip.workersComp"

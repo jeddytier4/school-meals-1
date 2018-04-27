@@ -705,7 +705,7 @@ export const define = {
   <FormattedMessage
       id="help.articles.helpText.veteransBenefitsDef"
       description="Help text."
-      defaultMessage="Benefits that are paid to veterans that have a service-connected disability and were not dishonorably discharged."
+      defaultMessage="Benefits that are paid to veterans who have a service-connected disability and were not dishonorably discharged."
   />,
 // D17
   socialSecurityTerm:
