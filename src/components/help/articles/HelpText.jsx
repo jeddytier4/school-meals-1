@@ -699,7 +699,7 @@ export const define = {
   <FormattedMessage
       id="help.articles.helpText.veteransBenefitsTerm"
       description="Help text."
-      defaultMessage="Verteran’s benefits"
+      defaultMessage="Veteran’s benefits"
   />,
   veteransBenefitsDef:
   <FormattedMessage
