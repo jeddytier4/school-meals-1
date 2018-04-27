@@ -575,7 +575,7 @@ export const define = {
   <FormattedMessage
       id="help.articles.helpText.cashBonusTerm"
       description="Help text."
-      defaultMessage="Cash Bonus"
+      defaultMessage="Cash bonus"
   />,
   cashBonusDef:
   <FormattedMessage
