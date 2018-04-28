@@ -20,6 +20,7 @@ class Summary extends Component {
   constructor(props) {
     super(props)
     this.assistanceProgramAccronym = this.assistanceProgramAccronym.bind(this)
+    this.handleNext = this.handleNext.bind(this)
   }
 
   get isValid() {
@@ -29,13 +30,14 @@ class Summary extends Component {
   assistanceProgramAccronym(program) {
     return program.accronym
   }
+
   handleNext() {
     if (this.props.applicationData.certifiedCorrect) {
       const stringDoc = document.documentElement.innerHTML
       axios.post('http://localhost:3001/post', stringDoc)
-      this.context.navigationData.next()
+      // Tthis.context.navigationData.next()
     } else {
-      this.context.navigationData.next()
+      // Tthis.context.navigationData.next()
     }
   }
 
@@ -64,6 +66,7 @@ class Summary extends Component {
       <Slide
           header={headerText}
           nextText={nextText}
+          handleNext={this.handleNext()}
           nextDisabled={!this.isValid}
           id="summary"
       >
