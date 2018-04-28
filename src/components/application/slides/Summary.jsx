@@ -35,9 +35,9 @@ class Summary extends Component {
     if (this.props.applicationData.certifiedCorrect) {
       const stringDoc = document.documentElement.innerHTML
       axios.post('http://localhost:3001/post', stringDoc)
-      // Tthis.context.navigationData.next()
+      this.context.navigationData.next()
     } else {
-      // Tthis.context.navigationData.next()
+      this.context.navigationData.next()
     }
   }
 
