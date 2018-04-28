@@ -810,7 +810,7 @@ export const define = {
   <FormattedMessage
       id="help.articles.helpText.ssSurvivorDef"
       description="Help text."
-      defaultMessage="Social Security survivor benefits are monthly payments to children of a deceased parent who was retired or disabled, but worked and paid taxes into the Social Security system."
+      defaultMessage="Social Security benefits are monthly payments to children of a deceased, retired, or disabled parent who worked and paid taxes into the Social Security system."
   />,
 // D26
   pensionBeneficiaryTerm:

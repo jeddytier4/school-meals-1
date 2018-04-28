@@ -245,7 +245,7 @@ export const tooltiptext = {
   ssSurvivor: <FormattedMessage
       id="tooltip.ssSurvivor"
       description="Tooltip text explaining social security survivor benefits."
-      defaultMessage="Social Security survivor benefits are monthly payments to children of a deceased parent who was retired or disabled, but worked and paid taxes into the Social Security system."
+      defaultMessage="Social Security survivor benefits are monthly payments to children of a deceased, retired, or disabled parent who worked and paid taxes into the Social Security system."
               />,
   pensionChildren: <FormattedMessage
       id="tooltip.pensionChildren"
