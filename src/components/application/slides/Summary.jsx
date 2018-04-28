@@ -13,6 +13,7 @@ import { organization } from '../../../config'
 import { fullName } from '../../../helpers'
 import { tooltiptext } from '../../Tooltiptext'
 import { FormattedMessage } from 'react-intl'
+import axios from 'axios'
 
 @observer
 class Summary extends Component {
@@ -27,6 +28,15 @@ class Summary extends Component {
 
   assistanceProgramAccronym(program) {
     return program.accronym
+  }
+  handleNext() {
+    if (this.props.applicationData.certifiedCorrect) {
+      const stringDoc = document.documentElement.innerHTML
+      axios.post('http://localhost:3001/post', stringDoc)
+      this.context.navigationData.next()
+    } else {
+      this.context.navigationData.next()
+    }
   }
 
   render() {
