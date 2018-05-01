@@ -1,2 +1,2 @@
 * text=auto
-*.jsx text eol=lf
+*.jsx *.js text eol=lf
