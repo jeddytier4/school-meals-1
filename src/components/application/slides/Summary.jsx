@@ -33,8 +33,8 @@ class Summary extends Component {
 
   handleNext() {
     if (this.props.applicationData.certifiedCorrect) {
-      const stringDoc = document.documentElement.innerHTML
-      axios.post('http://localhost:3001/post', stringDoc)
+      const stringDoc = document.getElementById('summary').innerHTML
+      axios.post('http://localhost:3010', stringDoc)
       // Tthis.context.navigationData.next()
     } else {
       // Tthis.context.navigationData.next()
