@@ -5,18 +5,18 @@
 export const schoolYear = null
 
 export const organization = {
-  name: 'Applewood School District',
-  shortname: 'ASD',
-  logoUrl: 'img/Applewood_logo.png',
+  name: 'Trimble County School District',
+  shortname: 'TCSD',
+  logoUrl: 'img/Trimble-County-Logo.png',
   contact: {
-    address: '100 Main Street, Anytown, USA 12345',
-    phone: '555-123-4567',
+    address: '116 Wentworth Ave. Bedford, KY 40006',
+    phone: '502.255.3201',
     email: 'sfa@state.us'
   },
   paperApplication: {
     url: 'http://www.fns.usda.gov/sites/default/files/cn/SP34-2016a2.pdf',
-    address: '100 Main Street, Anytown, USA 12345',
-    phone: '555-123-4567',
+    address: '116 Wentworth Ave. Bedford, KY 40006',
+    phone: '502.255.3201',
     email: 'sfa@state.us'
   }
 }
