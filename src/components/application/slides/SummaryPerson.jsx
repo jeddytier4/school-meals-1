@@ -29,7 +29,9 @@ class SummaryPerson extends Component {
               school: person.school
             }}
           />
-          <br />
+        }
+        {' '}
+        {person.isStudent &&
           <FormattedMessage
             id="app.slides.summaryPerson.studentdetails2"
             description="Student details"
