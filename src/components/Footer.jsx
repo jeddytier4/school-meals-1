@@ -13,12 +13,12 @@ class Footer extends Component {
             <strong>
               <FormattedMessage
                   id="footer.notRealDisclaimer"
-                  description="Disclaimer that this it not a real application."
-                  defaultMessage="This is not a real application for school meal benefits"
+                  description="Mission"
+                  defaultMessage="It's about every student, every day."
               />
             </strong>
           </div>
-          <img className="logo" src={organization.logoUrl} alt="Applewood Logo" />
+          <img className="logo" src={organization.logoUrl} alt="Trible County Schools Logo" />
           <div>{organization.name}</div>
           <div>{organization.contact.phone} / {organization.contact.email}</div>
           <div>{organization.contact.address}</div>

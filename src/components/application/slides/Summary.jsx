@@ -34,7 +34,7 @@ class Summary extends Component {
   handleNext() {
     if (this.props.applicationData.certifiedCorrect) {
       const stringDoc = document.getElementById('summary').innerHTML
-      axios.post('http://localhost:3010', stringDoc)
+      axios.post('http://localhost:3010', stringDoc, { responseType: 'text' })
       // Tthis.context.navigationData.next()
     } else {
       // Tthis.context.navigationData.next()
@@ -129,7 +129,7 @@ class Summary extends Component {
               assistancePrograms.length ?
               assistancePrograms.map(program =>
                 <li key={program.id}>
-                  {program.name} — <strong>{program.caseNumber}</strong>
+                  {program.name} {' '} <strong>{program.caseNumber}</strong>
                 </li>
               )
               :
