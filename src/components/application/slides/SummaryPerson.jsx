@@ -21,25 +21,25 @@ class SummaryPerson extends Component {
         <br />
         {person.isStudent &&
           <FormattedMessage
-            id="app.slides.summaryPerson.studentdetails"
-            description="Student details"
-            defaultMessage="Grade {grade} at {school}"
-            values={{
-              grade: person.grade,
-              school: person.school
-            }}
+              id="app.slides.summaryPerson.studentdetails"
+              description="Student details"
+              defaultMessage="Grade {grade} at {school}"
+              values={{
+                grade: person.grade,
+                school: person.school
+              }}
           />
         }
         {' '}
         {person.isStudent &&
           <FormattedMessage
-            id="app.slides.summaryPerson.studentdetails2"
-            description="Student details"
-            defaultMessage="Grade {grade} at {school}"
-            values={{
-              grade: person.grade,
-              school: person.school
-            }}
+              id="app.slides.summaryPerson.studentdetails2"
+              description="Student details"
+              defaultMessage="Grade {grade} at {school}"
+              values={{
+                grade: person.grade,
+                school: person.school
+              }}
           />
         }
         {editLinkId && <EditLink id={editLinkId} />}
@@ -47,9 +47,9 @@ class SummaryPerson extends Component {
           {person.isFoster &&
             <li>
               <FormattedMessage
-                id="app.slides.summaryPerson.foster"
-                description="Foster child "
-                defaultMessage="Foster child "
+                  id="app.slides.summaryPerson.foster"
+                  description="Foster child "
+                  defaultMessage="Foster child "
               />
               {' '}
               <EditLink id="foster" />
@@ -58,9 +58,9 @@ class SummaryPerson extends Component {
           {person.isMigrant &&
             <li>
               <FormattedMessage
-                id="app.slides.summaryPerson.migrant"
-                description="Migrant youth "
-                defaultMessage="Migrant youth "
+                  id="app.slides.summaryPerson.migrant"
+                  description="Migrant youth "
+                  defaultMessage="Migrant youth "
               />
               {' '}
               <EditLink id="other-programs" />
@@ -69,9 +69,9 @@ class SummaryPerson extends Component {
           {person.isHomeless &&
             <li>
               <FormattedMessage
-                id="app.slides.summaryPerson.homeless"
-                description="Homeless youth "
-                defaultMessage="Homeless youth "
+                  id="app.slides.summaryPerson.homeless"
+                  description="Homeless youth "
+                  defaultMessage="Homeless youth "
               />
               {' '}
               <EditLink id="other-programs" />
@@ -80,9 +80,9 @@ class SummaryPerson extends Component {
           {person.isRunaway &&
             <li>
               <FormattedMessage
-                id="app.slides.summaryPerson.runaway"
-                description="Runaway youth "
-                defaultMessage="Runaway youth "
+                  id="app.slides.summaryPerson.runaway"
+                  description="Runaway youth "
+                  defaultMessage="Runaway youth "
               />
               {' '}
               <EditLink id="other-programs" />
@@ -90,9 +90,9 @@ class SummaryPerson extends Component {
 
           {applicableIncomeLineItems(person).map(lineItem =>
             <SummaryPersonIncomeLineItem
-              key={lineItem.id}
-              person={person}
-              lineItem={lineItem}
+                key={lineItem.id}
+                person={person}
+                lineItem={lineItem}
             />
           )}
 

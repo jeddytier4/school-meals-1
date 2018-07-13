@@ -20,7 +20,6 @@ class Summary extends Component {
   constructor(props) {
     super(props)
     this.assistanceProgramAccronym = this.assistanceProgramAccronym.bind(this)
-    this.handleNext = this.handleNext.bind(this)
   }
 
   get isValid() {
@@ -31,21 +30,23 @@ class Summary extends Component {
     return program.accronym
   }
 
-  handleNext() {
-    if (this.props.applicationData.certifiedCorrect) {
-      const stringDoc = document.getElementById('summary').innerHTML
-      axios.post('http://localhost:3010', stringDoc, { responseType: 'text' })
-      // Tthis.context.navigationData.next()
-    } else {
-      // Tthis.context.navigationData.next()
-    }
+  submitData() {
+    const { applicationData } = this.props
+    const stringData = JSON.stringify(applicationData.cleaned, null, 2)
+    axios.post('/post',
+               {
+                 stringData
+               }).then(response => {
+                 if (response.status === 200){
+                   this.context.navigationData.next()
+                 }
+               });
   }
-
   render() {
     const { applicationData } = this.props
     const { contact,
-            otherChildren,
-            students } = applicationData
+      otherChildren,
+      students } = applicationData
     const assistancePrograms = applicationData.assistancePrograms.applicable
 
     const headerText =
@@ -58,15 +59,14 @@ class Summary extends Component {
     const nextText =
       <FormattedMessage
           id="app.slides.summary.nextText"
-          description="Text on the button to submit final applicaiton."
+          description="Text on the button to submit final application."
           defaultMessage="Submit"
       />
 
     return (
       <Slide
           header={headerText}
-          nextText={nextText}
-          handleNext={this.handleNext()}
+          nextText={nextText} handleNext={this.submitData}
           nextDisabled={!this.isValid}
           id="summary"
       >
@@ -100,17 +100,17 @@ class Summary extends Component {
         </SummaryPersonCollection>
 
         {applicationData.showHousehold &&
-        <SummaryPersonCollection
-            collection={otherChildren}
-            id="other-children"
-            showIncomes={true}
-        >
-          <FormattedMessage
-              id="app.slides.summary.otherChildren"
-              description="Other children"
-              defaultMessage="Other children"
-          />
-        </SummaryPersonCollection>
+          <SummaryPersonCollection
+              collection={otherChildren}
+              id="other-children"
+              showIncomes={true}
+          >
+            <FormattedMessage
+                id="app.slides.summary.otherChildren"
+                description="Other children"
+                defaultMessage="Other children"
+            />
+          </SummaryPersonCollection>
         }
 
         <SummaryAdults applicationData={applicationData} />
@@ -127,19 +127,19 @@ class Summary extends Component {
           <ul>
             {
               assistancePrograms.length ?
-              assistancePrograms.map(program =>
-                <li key={program.id}>
-                  {program.name} {' '} <strong>{program.caseNumber}</strong>
+                assistancePrograms.map(program =>
+                  <li key={program.id}>
+                    {program.name} {' '} <strong>{program.caseNumber}</strong>
+                  </li>
+                )
+                :
+                <li>
+                  <FormattedMessage
+                      id="app.slides.summary.noAssistancePrograms"
+                      description="Placeholder indicating that no assistance programs have been selected."
+                      defaultMessage="(none)"
+                  />
                 </li>
-              )
-              :
-              <li>
-                <FormattedMessage
-                    id="app.slides.summary.noAssistancePrograms"
-                    description="Placeholder indicating that no assistance programs have been selected."
-                    defaultMessage="(none)"
-                />
-              </li>
             }
           </ul>
         </div>
@@ -152,64 +152,64 @@ class Summary extends Component {
           />
         </SummaryLabel>
         <p>
-          { fullName(applicationData.attestor) }
+          {fullName(applicationData.attestor)}
           {!!contact.address1 &&
-          <span>
-            <br />
-            { contact.address1 }
-          </span>
+            <span>
+              <br />
+              {contact.address1}
+            </span>
           }
           {!!contact.address2 &&
-          <span>
-            <br />
-            { contact.address2 }
-          </span>
+            <span>
+              <br />
+              {contact.address2}
+            </span>
           }
           {!!contact.city &&
-          <span>
-            <br />
-            { contact.city },{' '}
-          </span>
+            <span>
+              <br />
+              {contact.city},{' '}
+            </span>
           }
-          { contact.state }
+          {contact.state}
           {' '}
-          { contact.zip }
+          {contact.zip}
           {!!contact.phone &&
-          <span>
-            <br />
-            { contact.phone }
-          </span>
+            <span>
+              <br />
+              {contact.phone}
+            </span>
           }
           {!!contact.email &&
-          <span>
-            <br />
-            { contact.email }
-          </span>
+            <span>
+              <br />
+              {contact.email}
+            </span>
           }
         </p>
 
         {applicationData.showHousehold &&
-        <div>
-          <SummaryLabel>
-            <FormattedMessage
-                id="app.slides.summary.totalIncome"
-                description="Total household income"
-                defaultMessage="Total household income"
-            />
-          </SummaryLabel>
-          <Tooltip text={tooltiptext.monthlyIncomeSum}>
-            <IncomeAmount
-                frequency="monthly"
-                decimals={2}
-                amount={parseFloat(applicationData.totalMonthlyHouseholdIncome, 10)}
-            />
-          </Tooltip>
-        </div>
+          <div>
+            <SummaryLabel>
+              <FormattedMessage
+                  id="app.slides.summary.totalIncome"
+                  description="Total household income"
+                  defaultMessage="Total household income"
+              />
+            </SummaryLabel>
+            <Tooltip text={tooltiptext.monthlyIncomeSum}>
+              <IncomeAmount
+                  frequency="monthly"
+                  decimals={2}
+                  amount={parseFloat(applicationData.totalMonthlyHouseholdIncome, 10)}
+              />
+            </Tooltip>
+          </div>
         }
 
         <Checkboxes legend="Certification">
           <Checkbox name="certifiedCorrect" object={applicationData}>
-            { applicationData.showHousehold ? // eslint-disable-line no-nested-ternary
+            {applicationData.showHousehold ? // eslint-disable-line no-nested-ternary
               <strong>
                 <FormattedMessage
                     id="app.slides.summary.certification"
@@ -242,7 +242,7 @@ class Summary extends Component {
                   />&nbsp;
                   <SerialList className="usa-label-big" items={assistancePrograms} mapFunc={this.assistanceProgramAccronym} />
                 </strong>
-                 :
+                :
                 <strong>
                   <FormattedMessage
                       id="app.slides.summary.infoCorrect"

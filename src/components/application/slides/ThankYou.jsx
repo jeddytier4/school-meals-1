@@ -5,6 +5,7 @@ import download from 'downloadjs'
 import { observer } from 'mobx-react'
 import { FormattedMessage } from 'react-intl'
 
+
 @observer
 class ThankYou extends Component {
   constructor(props) {
@@ -15,7 +16,6 @@ class ThankYou extends Component {
   downloadData() {
     const { applicationData } = this.props
     const stringData = JSON.stringify(applicationData.cleaned, null, 2)
-
     download(stringData, 'nslp-data.json', 'text/plain');
   }
 
