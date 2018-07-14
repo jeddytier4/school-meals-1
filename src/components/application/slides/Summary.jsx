@@ -33,7 +33,7 @@ class Summary extends Component {
   submitData() {
     const { applicationData } = this.props
     const stringData = JSON.stringify(applicationData.cleaned, null, 2)
-    axios.post('/post',
+    axios.post('/api/FRL',
                {
                  stringData
                }).then(response => {
